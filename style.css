@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
 *,
 *::after,
 *::before {
@@ -30,7 +32,7 @@ input[type=number] {
 }
 
 html {
-	font-family: inter;
+	font-family: inter, sans-serif;
 }
 
 body {
@@ -138,3 +140,60 @@ body {
 	padding: 4px 8px;
 	background-color: var(--color-zinc-900);
 }
+
+
+.mention {
+	position: fixed;
+	bottom: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.mention-title {
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	color: var(--color-zinc-500);
+	font-size: 14px;
+	white-space: nowrap;
+}
+.mention-title a {
+	text-decoration: none;
+	color:  var(--color-zinc-400);
+	transition: color .4s;
+}
+
+.mention-title a:hover {
+	color:  var(--color-zinc-300);
+}
+
+.mention-icons{
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+
+.mention-icon {
+	height: 24px;
+	width: 24px;
+	color: var(--color-zinc-500);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: color .4s;
+
+}
+
+.mention-icon:hover {
+	color: var(--color-zinc-400);
+}
+
+.mention-icon:not(:last-child) {
+	margin-right: 8px;
+}
+
