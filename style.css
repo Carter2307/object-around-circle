@@ -43,6 +43,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: var(--color-zinc-900);
+	overflow: hidden;
 }
 
 .canvas {
