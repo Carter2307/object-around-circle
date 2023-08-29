@@ -4,6 +4,7 @@
 *::after,
 *::before {
 	box-sizing: border-box;
+	font-size: 1rem;
 }
 
 /* Chrome, Safari, Edge, Opera */
